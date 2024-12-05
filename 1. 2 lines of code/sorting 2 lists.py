@@ -17,4 +17,14 @@ for i in range(len(Colum1)):
         distance = abs(Colum2[i]-Colum1[i])
         TotalDistance+=distance
 
-print (TotalDistance)
+SimilarityScore = 0
+for i in range(len(Colum1)):
+    AmountNum= 0
+    for j in range(len(Colum2)):
+         if Colum1[i] == Colum2[j]:
+             AmountNum+= 1
+    SimilarityScore+= AmountNum * Colum1[i]
+
+print (f'Answer to 1 is{totaldistance}')
+print(f' Answer to 2 is{SimilarityScore}')
+             
